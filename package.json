@@ -8,20 +8,15 @@
     "start": "node src/server.js",
     "test": "nodemon test/testServer.js"
   },
-  "type": "module",
+
   "dependencies": {
     "axios": "^0.21.1",
-<<<<<<< HEAD
-    "cookie-parser": "~1.4.4",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.7"
-=======
+    "mongoose": "^6.2.7",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "~1.4.4",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0"
->>>>>>> 1762c5d804d12ec93e7e37a404ab9179d12d8bdd
   }
 }

@@ -1,9 +1,12 @@
-import { Router } from 'express'
-import { getDatosController, postDatosController } from '../controlador/datos.js'
+import { Router } from "express";
+import {
+  getUserController,
+  getAllUserController,
+} from "../controlador/datos.js";
 
-const routerDatos = new Router()
+const routerDatos = new Router();
 
-routerDatos.get('/', getDatosController)
-routerDatos.post('/', postDatosController)
+routerDatos.get("/:id", getUserController);
+routerDatos.get("/allUsers", getAllUserController);
 
-export default routerDatos
+export default routerDatos;

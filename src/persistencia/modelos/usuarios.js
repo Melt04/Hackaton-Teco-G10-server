@@ -37,5 +37,5 @@ const usuarioSchema = new Schema({
   ],
 });
 
-const modelUsuario = new model("contenidos", usuarioSchema);
+const modelUsuario = new model("usuarios", usuarioSchema);
 export { modelUsuario };

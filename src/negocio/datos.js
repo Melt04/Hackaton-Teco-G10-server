@@ -1,17 +1,23 @@
-import { recuperarTodos, guardar } from "../persistencia/datos.js";
+import {
+  getUserById,
+  getAllUsers,
+  getContentById,
+  getAllcontent,
+} from "../persistencia/datos.js";
 
-async function obtenerDatos() {
-  return await recuperarTodos();
+async function getUser(id) {
+  return await getUserById(id);
 }
 
-async function crearDato(dato) {
-  dato.added = Date.now();
-  await guardar(dato);
-  return dato;
+async function getUsers() {
+  return await getAllUsers();
 }
-async function getUsuarios() {
-  await guardar(dato);
-  return dato;
+async function getContent(id) {
+  return await getContentById(id);
 }
 
-export { obtenerDatos, crearDato };
+async function getContents() {
+  return await getAllcontent();
+}
+
+export { getUser, getUsers, getContents, getContent };
