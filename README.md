@@ -16,5 +16,4 @@ Vera Tapia, Patricia
 ```
 
 ### Wireframe [Vínculo a Figma](https://www.figma.com/file/a9jbJHpOd56FgiNdlGUNHu/Wireframe-Hackaton-Team-10?node-id=133%3A671)
-
-![Hackathon4](https://user-images.githubusercontent.com/90204740/158867046-d8cacbf0-05fe-427f-a98e-5be19ac4f487.png)
+![Hackathon4](https://user-images.githubusercontent.com/90204740/158868075-0232d27d-2ab7-4143-aac9-312e59cb0270.png)
