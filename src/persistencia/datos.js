@@ -6,8 +6,9 @@ async function getUserById(id) {
   return user;
 }
 async function getAllUsers() {
-  const user = await modelUsuario.find();
-  return user;
+  const users = await modelUsuario.find();
+  console.log("users");
+  return users;
 }
 
 async function getContentById(id) {

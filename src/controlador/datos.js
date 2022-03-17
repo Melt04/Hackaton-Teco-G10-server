@@ -2,16 +2,17 @@ import {
   getUser,
   getUsers,
   getContent,
-  getContents,
+  getContents
 } from "../negocio/datos.js";
 
 async function getUserController(req, res) {
-  const { id } = req.body;
+  const { id } = req.params;
   console.log(id);
   const datos = await getUser(id);
   res.json(datos);
 }
 async function getAllUserController(req, res) {
+  console.log("2");
   try {
     const datos = await getUsers();
     return res.json(datos);
@@ -21,7 +22,7 @@ async function getAllUserController(req, res) {
   }
 }
 async function getContentController(req, res) {
-  const { id } = req.body;
+  const { id } = req.params;
   console.log(id);
   const datos = await getContent(id);
   res.json(datos);
@@ -40,5 +41,5 @@ export {
   getUserController,
   getAllUserController,
   getContentController,
-  getAllContentController,
+  getAllContentController
 };
