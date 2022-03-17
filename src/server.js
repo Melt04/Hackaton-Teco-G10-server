@@ -1,14 +1,20 @@
-import express from 'express'
-import routerDatos from './rutas/datos.js'
+import express from "express";
+import routerDatos from "./rutas/datos.js";
+import mongoose from "mongoose";
 
-const app = express()
-app.use(express.json())
+const app = express();
+app.use(express.json());
 
-app.use('/api/datos', routerDatos)
+mongoose
+  .connect("mongodb://localhost:27017/test")
+  .catch((error) => handleError(error));
+app.use("/api/datos", routerDatos);
 
 // start server
-const PORT = 8080
+const PORT = 8080;
 const server = app.listen(PORT, () => {
-    console.log(`Servidor express escuchando en el puerto ${server.address().port}`)
-})
-server.on('error', error => console.error(`Error en servidor`, error))
+  console.log(
+    `Servidor express escuchando en el puerto ${server.address().port}`
+  );
+});
+server.on("error", (error) => console.error(`Error en servidor`, error));

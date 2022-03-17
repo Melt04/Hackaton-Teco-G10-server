@@ -1,15 +1,8 @@
-const datos = []
+import modelUsuario from "./modelos/usuarios";
 
-async function recuperarTodos() {
-    return datos
+async function getUserById(id) {
+  const user = await modelUsuario.find({ id });
+  return user;
 }
 
-async function guardar(dato) {
-    datos.push(dato)
-    return dato
-}
-
-export {
-    recuperarTodos,
-    guardar
-}
+export { getUsuarios };

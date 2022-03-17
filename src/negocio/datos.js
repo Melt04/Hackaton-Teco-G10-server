@@ -1,13 +1,17 @@
-import { recuperarTodos, guardar } from '../persistencia/datos.js';
+import { recuperarTodos, guardar } from "../persistencia/datos.js";
 
 async function obtenerDatos() {
-    return await recuperarTodos()
+  return await recuperarTodos();
 }
 
 async function crearDato(dato) {
-    dato.added = Date.now()
-    await guardar(dato)
-    return dato
+  dato.added = Date.now();
+  await guardar(dato);
+  return dato;
+}
+async function getUsuarios() {
+  await guardar(dato);
+  return dato;
 }
 
-export { obtenerDatos, crearDato }
+export { obtenerDatos, crearDato };

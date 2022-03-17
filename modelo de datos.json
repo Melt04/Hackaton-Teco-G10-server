@@ -53,3 +53,5 @@
     ]
 
 }
+
+MONGO_URL=mongodb+srv://admin:Merluza23@cluster0.vuapg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

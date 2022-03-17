@@ -1,16 +1,17 @@
 {
   "name": "mini-flow-equipo-10",
   "version": "1.0.0",
+  "type": "module",
   "main": "server.js",
   "license": "MIT",
   "scripts": {
     "start": "node src/server.js",
     "test": "nodemon test/testServer.js"
-
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
     "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
   }
 }
