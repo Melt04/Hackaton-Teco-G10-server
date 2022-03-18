@@ -1,5 +1,6 @@
 # Hackathon Teco - Equipo 10
-![readme](https://user-images.githubusercontent.com/90204740/158875971-e6eb40dd-dcf7-4e8a-a693-678bf1cf2886.png)
+![readme](https://user-images.githubusercontent.com/90204740/159008200-a5185f72-bef5-4ee7-8c54-397ef932114b.png)
+
 ### Integrantes
 ```
 Alvarez, Anibal Federico
